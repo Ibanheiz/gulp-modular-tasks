@@ -1,0 +1,15 @@
+.*.swp
+._*
+.DS_Store
+.git
+.hg
+.lock-wscript
+.svn
+.wafpickle-*
+CVS
+npm-debug.log
+test
+examples
+gulpfile.js
+bower.json
+app.js
