@@ -32,6 +32,10 @@ var module = require('gulp-modular-tasks')(gulp);
 // createTask('nome do módulo', 'source do arquivo', 'destino do arquivo compilado')
 gulp.task('build:stylus', module.createTask('stylus', './css/stylus/index.styl', '.css/build/'));
 
+// Minifica e concatena JavaScript
+// createTask('nome do módulo', 'source do arquivo', 'nome do arquivo de destino do js concatenado' 'destino do arquivo compilado')
+gulp.task('minify-concat:js', module.createTask('minify-concat', './js/index.js', 'all.min.js', 'build/js'));
+
 ```
 
 ### LICENSE [MIT](LICENSE)
