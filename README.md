@@ -29,9 +29,9 @@ var module = require('gulp-modular-tasks')(gulp);
 
 
 // Faz o build, minifica e concatena Stylus para CSS
-//createTask('nome do módulo', 'source do arquivo', 'destino do arquivo compilado')
+// createTask('nome do módulo', 'source do arquivo', 'destino do arquivo compilado')
 gulp.task('build:stylus', module.createTask('stylus', './css/stylus/index.styl', '.css/build/'));
 
 ```
 
-## LICENSE [MIT](LICENSE)
+### LICENSE [MIT](LICENSE)
