@@ -7,7 +7,7 @@ Projeto para modularizar as tasks do gulp.
 $ npm install --save-dev gulp-modular-tasks
 ```
 
-#Modules
+## Modules
     modules/
       concat
       copy
