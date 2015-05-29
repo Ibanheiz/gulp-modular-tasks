@@ -36,6 +36,10 @@ gulp.task('build:stylus', module.createTask('stylus', './css/stylus/index.styl',
 // createTask('nome do módulo', 'source do arquivo', 'nome do arquivo de destino do js concatenado' 'destino do arquivo compilado')
 gulp.task('minify-concat:js', module.createTask('minify-concat', './js/index.js', 'all.min.js', 'build/js'));
 
+// Concatena as bibliotecas minificas baixadas pelo bower
+// createTask('nome do módulo', 'source do arquivo', 'nome do arquivo de destino do js concatenado' 'destino do arquivo compilado')
+gulp.task('bower-concat', module.createTask('concat', '/bower_components/**/*.min.js', 'components.min.js', 'build/js'));
+
 ```
 
 ### LICENSE [MIT](LICENSE)
