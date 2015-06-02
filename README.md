@@ -23,10 +23,8 @@ $ npm install --save-dev gulp-modular-tasks
 ## Examples
 
 ```javascript
-
 var gulp = require('gulp');
 var module = require('gulp-modular-tasks')(gulp);
-
 
 // Faz o build, minifica e concatena Stylus para CSS
 // createTask('nome do módulo', 'source do arquivo', 'destino do arquivo compilado')
@@ -43,7 +41,6 @@ gulp.task('bower-concat', module.createTask('concat', './bower_components/**/*.m
 // Optimiza as imagens
 // createTask('nome do módulo', 'diretório das imagens', 'destino das imagens optimizadas')
 gulp.task('imageopt', module.createTask('imageopt', './images/original/*.*', './build/images'));
-
 ```
 
 ### LICENSE [MIT](LICENSE)

@@ -1,11 +1,11 @@
 {
   "name": "gulp-modular-tasks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Projeto para modularizar as tasks do gulp",
   "main": "index.js",
   "scripts": {
     "prestart": "gulp mocha",
-    "start": "node app"
+    "start": "nodemon app"
   },
   "repository": {
     "type": "git",

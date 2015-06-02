@@ -67,5 +67,5 @@
   gulp.task('mocha', module.createTask('mocha', './test/*.js'));
 
   // Roda a porra toda
-  gulp.task('default', ['build:stylus', 'build:less', 'minify-concat:js', 'bower-concat', 'imageopt', 'nodemon', 'livereload', 'mocha']);
+  gulp.task('default', ['build:stylus', 'build:less', 'minify-concat:js', 'bower-concat', 'nodemon', 'livereload', 'mocha']);
 }());
