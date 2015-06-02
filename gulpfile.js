@@ -4,7 +4,21 @@
   var gulp = require('gulp');
   var module = require('./')(gulp);
   // Pra quem usa um bower
-  var bowerFiles = ['./examples/bower/bower_components/**/angular.min.js', './examples/bower/bower_components/**/*.min.js'];
+  var bowerFiles = [
+    './examples/bower/bower_components/**/angular.min.js',
+    './examples/bower/bower_components/**/*.min.js'
+  ];
+  // Files e tasks para o livereload
+  var watchers = [
+    {
+      file: './index.js',
+      task: 'minify-concat:js'
+    },
+    {
+      file: './index.js',
+      task: 'lint'
+    }
+  ];
 
   /**
   * Faz o build, minifica e concatena Stylus para CSS
@@ -56,9 +70,9 @@
 
   /**
   * Ativa o livereload e recebe algum arquivo não monitorado por outras tasks
-  * createTask('nome do módulo', 'arquivos que não estão em outras tasks para serem observados')
+  * createTask('nome do módulo', 'Arquivos com tarefas a serem observados' 'Arquivos sem tasks a serem observados')
   */
-  gulp.task('livereload', module.createTask('watch', ''));
+  gulp.task('livereload', module.createTask('watch', watchers, './index.js'));
 
   /**
   * Roda os testes criados com o mocha
