@@ -84,7 +84,7 @@
   * Roda os testes criados com o jasmine
   * createTask('nome do módulo', 'arquivos de teste')
   */
-  gulp.task('jasmine', module.createTask('jasmine', './examples/jasmine/*Spec.js'));
+  gulp.task('jasmine', module.createTask('jasmine', './examples/jasmine/*Spec.js', 'test'));
 
   // Roda a porra toda
   gulp.task('default', ['build:stylus', 'build:less', 'minify-concat:js', 'bower-concat', 'nodemon', 'livereload', 'mocha', 'jasmine']);
