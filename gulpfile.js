@@ -80,6 +80,12 @@
   */
   gulp.task('mocha', module.createTask('mocha', './test/*.js'));
 
+  /**
+  * Roda os testes criados com o jasmine
+  * createTask('nome do módulo', 'arquivos de teste')
+  */
+  gulp.task('jasmine', module.createTask('jasmine', './examples/jasmine/*Spec.js'));
+
   // Roda a porra toda
-  gulp.task('default', ['build:stylus', 'build:less', 'minify-concat:js', 'bower-concat', 'nodemon', 'livereload', 'mocha']);
+  gulp.task('default', ['build:stylus', 'build:less', 'minify-concat:js', 'bower-concat', 'nodemon', 'livereload', 'mocha', 'jasmine']);
 }());
