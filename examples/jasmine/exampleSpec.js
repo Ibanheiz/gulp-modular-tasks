@@ -1,5 +1,5 @@
 describe('whatever', function () {
   it('if true is true', function () {
-    expect(true).toBe(true);
+    expect(true).toBe(false);
   });
 });

@@ -4,6 +4,7 @@
   "description": "Projeto para modularizar as tasks do gulp",
   "main": "index.js",
   "scripts": {
+    "test": "mocha",
     "prestart": "gulp mocha",
     "start": "nodemon app"
   },
