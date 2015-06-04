@@ -1,6 +1,6 @@
 {
   "name": "gulp-modular-tasks",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Projeto para modularizar as tasks do gulp",
   "main": "index.js",
   "scripts": {
