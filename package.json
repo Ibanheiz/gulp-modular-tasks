@@ -1,6 +1,6 @@
 {
   "name": "gulp-modular-tasks",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Projeto para modularizar as tasks do gulp",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   "homepage": "https://github.com/Ibanheiz/gulp-modular-tasks",
   "dependencies": {
     "express": "^4.12.4",
-    "gulp": "^3.8.11",
+    "gulp": "^3.9.0",
     "gulp-concat": "^2.5.2",
     "gulp-imagemin": "^2.2.1",
     "gulp-jasmine": "^2.0.1",
