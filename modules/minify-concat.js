@@ -4,6 +4,7 @@ module.exports = function (gulp, plugins, source, fileName, output) {
             .pipe(plugins.sourcemaps.init())
             .pipe(plugins.uglify().on('error', plugins.util.log))
             .pipe(plugins.concat(fileName))
+            .pipe(plugins.sourcemaps.write( '.' ))
             .pipe(plugins.livereload())
             .pipe(gulp.dest(output));
   };
