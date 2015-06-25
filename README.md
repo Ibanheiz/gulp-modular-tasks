@@ -43,4 +43,10 @@ gulp.task('bower-concat', module.createTask('concat', './bower_components/**/*.m
 gulp.task('imageopt', module.createTask('imageopt', './images/original/*.*', './build/images'));
 ```
 
+## Test
+
+```sh
+npm test
+```
+
 ### LICENSE [MIT](LICENSE)
